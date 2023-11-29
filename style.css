@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffd372;
+    overflow-x: hidden;
+
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./OTF/PPNeueMontreal-Book.otf);
+  }
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'myFirstFont';
+}
+
+
+
+
+/* Text color classes */
+
+.text-shadow{
+    text-shadow: -1px 1px 0 #000, 
+    1px 1px 0 #000, 
+   1px -1px 0 #000, 
+  -1px -1px 0 #000;
+}
+.blue{
+    color:dodgerblue;
+}
+
+.green{
+    color:lightgreen;
+}
+.pink{
+    color:pink;
+}
+.purple{
+    color:purple;
+}
+
+.golo-arm{
+    display: none!important;
+}
+
+
+/* Morph Image Women */
+
+.morph-img{
+    width: 26%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-52% , -100%);
+}
+
+
+
+/* CSS according the Media sizes */
+
+
+
+/* Styles for small screens  */
+@media only screen and (max-width: 767px) {
+    .welcome-txt>div span {
+        font-size:20px ;
+    }
+  }
+  
+  /* Styles for medium screens  */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .welcome-txt>div span {
+        font-size:90px ;
+    }
+  }
+  
+  /* Styles for large screens */
+  @media only screen and (min-width: 992px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .onload-container {
+        width: 100%;
+        height: 100vh;
+        padding: 50px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 2;
+       
+    }
+    
+    .container .onload-container h1 {
+        font-weight: 700;
+        align-items: center;
+    }
+    
+    .bubble-1 {
+        position: absolute;
+        left: 80%;
+        top: 18%;
+    }
+    
+    
+    .bubble-2 {
+        position: absolute;
+        top: 70%;
+        left: 19%;
+    }
+    
+    .bubble-3 {
+        position: absolute;
+        left: 11%;
+        top: 16%;
+    }
+    
+    
+    .bubble-4 {
+        position: absolute;
+        right: 47%;
+        top: 44%;
+    }
+    
+    .bubble-5 {
+        position: absolute;
+        left: 80%;
+        bottom: 19%;
+    }
+    
+    .welcome-txt {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        padding: 60px 20px 50px;
+        background-color: #f5e1c3;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .welcome-txt div {
+        display: flex;
+        justify-content: center;
+        white-space: nowrap;
+        color: black;
+        margin-bottom: 30px;
+        opacity: 1;
+    }
+    
+    main {
+        width: 100%;
+        display: none;
+        background-color: #ffd372;
+        height: 100vh;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .objects {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .welcome-txt>div span {
+        font-size: 150px;
+        letter-spacing: 24.25px;
+        line-height: 195px;
+    }
+    
+    .bubbles svg{
+        opacity: 0;
+    }
+    .obj--2{
+        width: 35%;
+        margin-top: 220px;
+        margin-right: -120px;
+        opacity: 1;
+        transition: opacity 0.3s ease-out;
+    }
+    
+    .obj--1{
+        width: 40%;
+        margin-left: -148px;
+        margin-top: -60px;
+        opacity: 1;
+        transition: opacity 0.3s ease-out;
+    }
+    .obj--3{
+        width: 31%;
+        position: absolute;
+        right: 50%;
+        z-index: 999;
+        bottom: 8%;
+        transform: rotate(13deg);
+    }
+    .obj--4{
+        position: absolute;
+        top: 50%;
+        left: 47%;
+        z-index: 99;
+    
+    }
+    main{
+        display: none;
+        position: relative;
+    }
+    .card-scroll-container{
+        display: block;
+        height: 100%;
+        position: relative;
+    }
+    .rounded-container{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        transform: translate(0, 39%);
+        scale: 1.2;
+    }
+    .container_2{
+        margin-top:491px;
+        background-color: #fef7e6;
+    }
+
+.rounded-cards-content{
+    width: 100%;
+    height: 500px;
+}
+.rounded-cards-content>h2{
+    margin: 0;
+    padding: 20px;
+    font-size: 60px;
+    font-family: inherit;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+.rounded-cards-content>p{
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+.rotate{
+    transform: translate(0%, 0%) rotate(0deg);
+}
+  }
+  
